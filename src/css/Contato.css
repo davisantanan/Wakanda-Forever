@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Passion+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: 0;
+    text-decoration: none;
+}
+
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;   
+}
+
+li:hover {
+    color: #666699;
+}
+
+#logo {
+     width: 150px;
+     height: auto;
+}
+
+#banner{
+    background-image: url('https://t2.tudocdn.net/641753?w=660&h=330');
+    background-position: 50% 50%;
+    background-size: contain;
+    width: 100%;
+    height: 600px;
+}
+
+.form-contain {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    box-shadow: 5px 5px 10px #666699;
+}
+
+.form {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-header {
+    display: flex;
+    justify-content: center;
+    color:  white;
+    font-size: 20px;
+    font-family: 'Kdam Thmor Pro', sans-serif; 
+}
+
+.input-group label {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: 'Kdam Thmor Pro', sans-serif; 
+    
+}
+
+.input-group input {
+    width: 500px;
+    height: 50px;
+    box-shadow: 5px 5px 10px  #666699;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 15px;
+    padding: 5px;
+}
+
+textarea {
+    width: 500px;
+    height: 100px;
+    box-shadow: 5px 5px 10px  #666699;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 15px;
+    padding: 5px;
+    resize: none;
+}
+
+.input-group::placeholder {
+    color: gray;
+}
+
+button {
+    width: 515px;
+    height: 60px;
+    background-color: #666699;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px; 
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navegation {
+    display: none;
+}
+
+.footer-list {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+@media (max-width: 768px) {
+    
+    .form-contain {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .form-content {
+        width: 90%;
+    }
+
+    form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .input-group {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    input, textarea, button {
+        max-width: 100%;
+    }
+
+    .form-header {
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+    }
+}
